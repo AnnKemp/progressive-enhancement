@@ -31,7 +31,6 @@ footer{
 }
 .farmer, .neighbour {
     display: inline;
-    background-color:transparent;
     line-height:1.6em;
     padding:0px;
 }
@@ -52,8 +51,9 @@ footer{
      font-weight: bold;
      background-color: #ccc;
     }
- .author{
+.author{
      font-style:normal;
+     display: inline-block;
  }
  img{
      width: 60%;
@@ -107,6 +107,9 @@ tr:nth-child(odd) {background: #FFF}
   p:first-child {
             font-weight: bold;
         }
+li:first-child {
+            background-color: greenyellow;
+        }
 article{
     position:fixed;
     right: 0px;
@@ -133,12 +136,12 @@ section{
 <body>
 <header>
 <H1 tabindex="1">The Story of the Chinese Farmer</H1>
-    <em class="author" tabindex="2" rel="author">11 may 2016, Alexandre Gorius</em>
+    <a class="author" tabindex="2"  href="https://medium.com/@gorius.alexandre" rel="author">11 may 2016, Alexandre Gorius</a>
 <figure>
 <img tabindex="3"  src="https://cdn-images-1.medium.com/max/1000/1*2PCmLZyzQaF2pyKYkSTFpA.jpeg" alt="image of man hosing water on closeds and another man grabbing him by the shoulder" />
 </figure>
 <article>
-    <H3 tabindex="7" >Preamble</H3>
+    <H3 tabindex="7">Preamble</H3>
 <ul>
     <li>read this once</li>
     <li>then read it again</li>
