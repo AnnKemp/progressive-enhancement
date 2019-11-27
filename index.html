@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
     <style>
-        body{
-            margin:0;
-            padding:0;
+body{
+            margin:0 auto 0 auto;
+            padding-top:0;
             padding-bottom:20px;
             padding-right: 20px;
             padding-left: 20px;
-            font-family:"Times New Roman", Times, serif;
+            /*font-family:"Times New Roman", Times, serif; */
             font-family: 'Open Sans', sans-serif;
             font-size: 1em;
             max-width: 90%;
@@ -42,14 +43,16 @@ footer{
      text-transform: capitalize;
      color:green;
      font-weight: bold;
-     background-color:#ccc;
+     background-color: #fae6fa;
+     /*background-color:#ccc; deze kleur heb ik vervangen door bovenstaande na toegankelijkheidstesting*/
 
     }
  .bad{
      text-transform: capitalize;
      color:red;
      font-weight: bold;
-     background-color: #ccc;
+     background-color: #400064;
+     /*background-color:#ccc; deze kleur heb ik vervangen door bovenstaande na toegankelijkheidstesting*/
     }
 .author{
      font-style:normal;
@@ -85,6 +88,8 @@ q{
         }
  a:hover{
      color:green;
+     font-weight: bold;
+     font-family: sans-serif;
  }
  table{
      width: 700px;
@@ -112,21 +117,21 @@ li:first-child {
         }
 article{
     position:fixed;
-    right: 0px;
-    bottom:0px;
+    right: 0;
+    bottom:0;
     width: 200px;
     height: 180px;
     background-color: red;
-    padding:20px;
-    padding-top:10px;
-    border-radius:25px 25px 0px 0px;
+    padding:10px 20px 20px 20px;
+    border-radius:25px 25px 0 0;
 }
 section{
-    padding:0px;
+    padding:0;
     margin-bottom: 50px;
 
 }
 </style>
+    <title>story about a chinese man</title>
     <!-- online font selection -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <!--[if lt IE 9]>
@@ -135,13 +140,14 @@ section{
 </head>
 <body>
 <header>
-<H1 tabindex="1">The Story of the Chinese Farmer</H1>
-    <a class="author" tabindex="2"  href="https://medium.com/@gorius.alexandre" rel="author">11 may 2016, Alexandre Gorius</a>
+<H1>The Story of the Chinese Farmer</H1>
+    <a class="author" href="https://medium.com/@gorius.alexandre" rel="author" title="link to Alexandre Gorius site">11 may 2016, Alexandre Gorius</a>
 <figure>
-<img tabindex="3"  src="https://cdn-images-1.medium.com/max/1000/1*2PCmLZyzQaF2pyKYkSTFpA.jpeg" alt="image of man hosing water on closeds and another man grabbing him by the shoulder" />
+<img src="https://cdn-images-1.medium.com/max/1000/1*2PCmLZyzQaF2pyKYkSTFpA.jpeg" alt="image of man hosing water on closeds and another man grabbing him by the shoulder" />
+<figcaption>foto van persoon die een onzichtbaar brandje blust</figcaption>
 </figure>
 <article>
-    <H3 tabindex="7">Preamble</H3>
+    <H3>Preamble</H3>
 <ul>
     <li>read this once</li>
     <li>then read it again</li>
@@ -152,7 +158,7 @@ section{
 </header>
 <main>
     <section>
-<H2 tabindex="4" >The story</H2>
+<H2>The story</H2>
 
 <p>
     Once upon a time there was a Chinese farmer whose horse ran away. That evening, all of his neighbors came around to commiserate. They said, <q class="neighbour">We are so sorry to hear your horse has run away. This is most unfortunate.</q> The farmer said, <q class="farmer">maybe</q>. The next day the horse came back bringing seven wild horses with it, and in the evening everybody came back and said, <q class="neighbour">Oh, isn&apos;t that lucky. What a great turn of events. You now have eight horses!</q> The farmer again said, <q class="farmer">maybe</q>.
@@ -166,22 +172,23 @@ section{
 
 
 <section>
+    <H3>Summary of the text above</H3>
     <details>
-    <table tabindex="5">
-   <caption> <tr><th>Event</th><th><mark class="good">good</mark> or <mark class="bad">bad</mark>?</th></tr></caption>
+            <summary>Table representing the farmer's philosophy.</summary>
+    <table>
+        <caption>Does the farmer choose for good or bad</caption>
+    <tr><th>Event</th><th><mark class="good">good</mark> or <mark class="bad">bad</mark>?</th></tr>
     <tr><td>Lose a horse</td><td><em>maybe</em></td></tr>
     <tr><td>Win more horses</td><td><em>maybe</em></td></tr>
     <tr><td>Son injury</td><td><em>maybe</em></td></tr>
     <tr><td>Avoid war</td><td><em>maybe</em></td></tr>
 </table>
-<p>
-    <summary>Table representing the farmer's philosophy.</summary>
-</p>
+
     </details>
 </section>
 
 
-    <h2 tabindex="6">Conclusion:</h2>
+    <h2>Conclusion:</h2>
 <q>
     <mark class="good">good</mark> and <mark class="bad">bad</mark> are just one perspective.<br />
     <a href="https://m.facebook.com/letsgobananasfashion/" target="_blank" title="bananas">Bananas</a> are <mark class="good">good</mark> for <a href="http://www.monkeyking.be/" target="_blank" title="monkey">monkeys</a>, <br />
@@ -189,7 +196,7 @@ section{
 </q>
 
 </main>
-<footer tabindex="8">
+<footer>
 
 <small>&copy;&nbsp;Copyright Just Another Company 2017. All right reserved.<br />Adapted from this article:</small> <a rel="license" href="https://wellsbaum.blog/2018/01/27/alan-watts-the-story-of-the-chinese-farmer/" target="_blank" title="alan-watts-the-story-of-the-chinese-farmer">https://wellsbaum.blog/2018/01/27/alan-watts-the-story-of-the-chinese-farmer/</a>
 </footer>
